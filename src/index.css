@@ -1,13 +1,109 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
+body{
+  font-family: 'IBM Plex Sans Devanagari', sans-serif;
+}
+h1,h2,h3{
+  margin: 0.5rem 0;
+}
+h1{
+  font-size: 1.5rem;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+h2{
+  font-size: 1.2rem;
+}
+h3{
+  font-size: 1rem;
+}
+a{
+  text-decoration: none;
+  color: beige;
+  transition: 0.3s;
+}
+a:hover{
+  color: orange;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+}
+.rowProducts{
+
+}
+.col-1{
+  flex: 1;
+  height: auto;
+}
+.col-2{
+  flex: 2;
+  height: auto;
+}
+.block{
+  background: linear-gradient(to right, #d4d4ce 0%, #858686 100%);
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 4px 4px 4px 4px #555252;
+  font-family: 'Merriweather', serif;
+  height: auto;
+  height: fit-content;
+  margin-top: 1rem;
+}
+.blockheader{
+  background: linear-gradient(to bottom, #000033 0%, #000066 100%);
+  padding: 1rem;
+  margin: 0 auto;
+}
+.row.center{
+  align-items: center;
+}
+.small{
+  max-height: 8rem;
+  max-width: auto;
+}
+button{
+  font-size: 0.9rem;
+  padding: 0.2rem;
+  margin: 0.1rem;
+  border-radius: 0.5rem;
+  border:0.1rem solid rgb(70, 62, 62);
+  background-color: yellow;
+  width: 100%;
+  cursor: pointer;
+  font-family:Georgia, 'Times New Roman', Times, serif
+}
+button:hover{
+  transition: 0.4s;
+  transform: scale(1.07);
+}
+button.add {
+  background-color: #40c0f0;
+  width: 1.5rem;
+  border:none;
+  font-weight: bold;
+}
+button.remove {
+  background-color: #f04040;
+  width: 1.5rem;
+  border:none;
+  font-weight: bold;
+}
+button.badge {
+  background-color:green;
+  border: none;
+  color: #ffffff;
+  width: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+.nice{
+  font-family: 'Nunito', sans-serif;
+  font-style: italic;
+  color: #000066;
+}
+.wowo{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  margin-left: 1.5rem;
 }
